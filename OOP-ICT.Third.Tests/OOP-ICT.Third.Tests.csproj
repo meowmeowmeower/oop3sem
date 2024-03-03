@@ -9,15 +9,25 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="obj\**" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2"/>
+        <PackageReference Include="xunit" Version="2.5.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Remove="obj\**" />
+        <ProjectReference Include="..\OOP-ICT.Third\OOP-ICT.Third.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="obj\**" />
+        <Compile Remove="obj\**"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Remove="obj\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="obj\**"/>
+    </ItemGroup>
+
 
 </Project>
