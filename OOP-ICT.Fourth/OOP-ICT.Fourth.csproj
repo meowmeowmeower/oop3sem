@@ -9,15 +9,27 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="obj\**" />
+        <Compile Remove="obj\**"/>
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Remove="obj\**" />
+        <EmbeddedResource Remove="obj\**"/>
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="obj\**" />
+        <None Remove="obj\**"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OOP-ICT.First\OOP-ICT.First.csproj"/>
+        <ProjectReference Include="..\OOP-ICT.Second\OOP-ICT.Second.csproj"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\OOP-ICT.First\OOP-ICT.First.csproj" />
+    </ItemGroup>
+
+
 
 </Project>
